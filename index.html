@@ -5,19 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simulador Interactivo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 <body>
     <header>
-        <h1>Simulador de credito interactivo</h1>
+        <nav class="navbar nav-custom">
+            <div class="container-fluid container-custom">
+              <a class="navbar-brand nav-logo" href="#">
+                Logo
+              </a>
+              <span class="navbar-text">
+                <span class="dropdown drop-custom">
+                    <button class="btn-opt" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M19.92 8.95001L13.4 15.47C12.63 16.24 11.37 16.24 10.6 15.47L4.08002 8.95001" stroke="#FFFBFA" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Ver perfil</a></li>
+                        <li><a class="dropdown-item" href="#">Suscripción</a></li>
+                        <li><a class="dropdown-item" href="#">Cerrar sesión</a></li>
+                    </ul>
+                </span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 50 50" fill="none">
+                    <circle cx="25" cy="25" r="25" fill="#D9D9D9"/>
+                    </svg>
+              </span>
+            </div>
+          </nav>
     </header>
     <main>
+        <div class="contenedor-base">
+            <section class="cliente">
+                <h1>Hola</h1>
+            </section>
+            <hr>
+            <section class="mascotas">
+                <div class="contenedor-mascotas">
+                    <div class="card text-center card-mascota">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card text-center card-mascota">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                    <div class="card text-center card-mascota">
+                        <div class="card-body">
+                          <h5 class="card-title">Special title treatment</h5>
+                          <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        
         <label for="monto">Monto</label>
         <input type="text" id="monto" placeholder="Ingresar monto de credito">
         <label for="plazo">Plazo en meses</label>
         <input type="number" id="plazo" placeholder="Ingresar plazo de credito">
         <button id="btnCalcular">Calcular</button>
     </main>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>    
 </body>
-<script src="./index.js"></script>
+<script src="./js/index.js"></script>
 </html>

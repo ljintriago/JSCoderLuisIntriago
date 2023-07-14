@@ -1,0 +1,41 @@
+.container-custom{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.nav-custom{
+    background-color: #00BD9D;
+    padding: 0;
+}
+
+.nav-logo{
+    color: #FFFBFA;
+}
+
+.drop-custom{
+    padding-bottom: 20px;
+}
+
+.btn-opt{
+    background-color: #00BD9D;
+    padding: 0;
+    border: 0;
+}
+
+.cliente{
+    h1{
+        font-size: 64px;
+    }
+}
+
+.contenedor-mascotas{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.card-mascota{
+    width: 25vw;
+    height: 450px;
+}
