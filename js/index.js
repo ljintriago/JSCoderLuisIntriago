@@ -1,4 +1,4 @@
-const impuesto = 0.12;
+/* const impuesto = 0.12;
 
 btnCalcular.onclick = () =>{handleClick()};
 
@@ -43,6 +43,27 @@ function calcular(monto, plazo, impuesto){
         resultado = monto + impTotal;
         return `La cuota a pagar es ${cuota} con impuesto a anual de ${impuesto*100}% y el total es ${resultado}`;
     }
+} */
+let usrName;
+let usrDir;
+let usrTel;
+let usrProCita;
+
+fetch('./json/mascotas.json')
+    .then((response) => response.json())
+    .then((json) => {setCustomerInfo(json)});
+
+function setCustomerInfo(obj){
+    usrName = document.getElementById("nom-usuario");
+    usrDir = document.getElementById("dir");
+    usrTel = document.getElementById("tel");
+    usrProCita = document.getElementById("pro-cita");
+
+    usrName.innerText = usrName.innerText + " " + obj.nombre
+    usrDir.innerText = obj.dir
+    usrTel.innerText = obj.tel
+    
+    
 }
 
 function setInitialInfo(obj, nombre, apellido, edad, mail){

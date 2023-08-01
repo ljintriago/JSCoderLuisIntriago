@@ -1,0 +1,21 @@
+{
+    "nombre": "Luis Intriago",
+    "dir": "Avenida ABC calle DEF 1234",
+    "tel": "0987654321",
+    "mascotas":{
+        "1":{
+                "nombre": "Matilda",
+                "raza": 193,
+                "edad": 10,
+                "proximaCita": "18082023"
+
+             },
+        "2":{
+            "nombre": "Fito",
+            "raza": 193,
+            "edad": 9,
+            "proximaCita": "08082023"
+            }
+    }
+
+}

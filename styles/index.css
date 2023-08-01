@@ -23,9 +23,17 @@
 }
 
 .cliente{
-    h1{
-        font-size: 64px;
-    }
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.cliente h1{ 
+    font-size: 64px;
+    color: #8BD7D2;
+}
+
+.usr-info{
+    padding-left: 50px;
 }
 
 .contenedor-mascotas{
@@ -33,9 +41,44 @@
     justify-content: space-between;
     padding-left: 50px;
     padding-right: 50px;
+    padding-bottom: 50px;
 }
 
 .card-mascota{
     width: 25vw;
     height: 450px;
+    border-radius: 50px;
+    border: 4px solid #8BD7D2;
 }
+
+.dir{
+    display: flex;
+}
+
+.dir h2{
+    font-size: 20px;
+    color: #49C6E5;
+    padding-left: 20px;
+}
+
+.tel{
+    display: flex;
+}
+
+.tel h2{
+    font-size: 20px;
+    color: #49C6E5;
+    padding-left: 20px;
+}
+
+.prox-cita{
+    display: flex;
+}
+
+.prox-cita h2{
+    font-size: 20px;
+    color: #49C6E5;
+    padding-left: 20px;
+}
+
+
