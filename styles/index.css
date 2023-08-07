@@ -82,3 +82,66 @@
 }
 
 
+.card-nuevo-mod{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-nuevo-mod h3{
+    padding-top: 10px;
+    color: #54DEFD;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    
+}
+
+.card-body-mod{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+ .info1 p{
+    color: #8BD7D2;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+ }
+
+.btn-nuevo{
+    width: 173px;
+    height: 52px;
+    border-radius: 25px;
+    background: #00BD9D;
+    border-color: #FFFBFA;
+    align-self: center;
+}
+
+.btn-nuevo:hover{
+    background: #49C6E5;
+    border-color: #49C6E5;
+}
+
+.btn-agendar{
+    height: 38px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-agendar p{
+    padding-left: 15px;
+    margin-bottom: 0;
+}
+
+.icons-img{
+    display: flex;
+    justify-content: space-between;
+}

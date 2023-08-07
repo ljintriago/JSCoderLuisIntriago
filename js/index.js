@@ -48,12 +48,16 @@ let usrName;
 let usrDir;
 let usrTel;
 let usrProCita;
+let petName;
+let petAge;
+let petRace;
 
 fetch('./json/mascotas.json')
     .then((response) => response.json())
-    .then((json) => {setCustomerInfo(json)});
+    .then((json) => {setCustomerAndPetInitialInfo(json)});
+   
 
-function setCustomerInfo(obj){
+function setCustomerAndPetInitialInfo(obj){
     usrName = document.getElementById("nom-usuario");
     usrDir = document.getElementById("dir");
     usrTel = document.getElementById("tel");
@@ -62,11 +66,31 @@ function setCustomerInfo(obj){
     usrName.innerText = usrName.innerText + " " + obj.nombre
     usrDir.innerText = obj.dir
     usrTel.innerText = obj.tel
+
+    for(i=1; i <=2; i++){
+        petName = document.getElementById("nombre"+i);
+        petAge = document.getElementById("edad"+i);
+        petRace = document.getElementById("raza"+i);
+
+        petName.innerText = petName.innerText + " " + obj.mascotas[i].nombre;
+        petAge.innerText = petAge.innerText + " " + obj.mascotas[i].edad + " años";
+        petRace.innerText = petRace.innerText + " " + getDogBrand(obj.mascotas[i].raza);
+    }
     
     
 }
 
-function setInitialInfo(obj, nombre, apellido, edad, mail){
+
+async function getDogBrand(id){
+    await fetch('https://api.thedogapi.com/v1/breeds/'+id)
+    .then((response) => response.json())
+    .then((json) => {
+        return json.name
+    })
+}
+
+
+/* function setInitialInfo(obj, nombre, apellido, edad, mail){
     obj.nombre = nombre;
     obj.apellido = apellido;
     obj.edad = edad;
@@ -91,4 +115,4 @@ function setProfileName(obj){
 
 setInitialInfo(cliente, "Luis", "Intriago", "27", "any@abcd.com");
 
-cliente.nombrePerfil = setProfileName(cliente);
+cliente.nombrePerfil = setProfileName(cliente); */
