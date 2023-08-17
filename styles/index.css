@@ -145,3 +145,10 @@
     display: flex;
     justify-content: space-between;
 }
+
+.btn-puntos{
+    border: 0;
+    border-color: #FFFBFA;
+    padding: 0;
+    background: #FFFBFA;
+}
